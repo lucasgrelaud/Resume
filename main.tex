@@ -1,7 +1,7 @@
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 %	The MIT License (MIT)
 %
-%	Copyright (c) 2015 Jan Küster
+%	Copyright (c) 2021 Lucas GRELAUD
 %
 %	Permission is hereby granted, free of charge, to any person obtaining a copy
 %	of this software and associated documentation files (the "Software"), to deal
@@ -52,14 +52,14 @@
 
 % some tex-live fonts - choose your own
 
-%\usepackage[defaultsans]{droidsans}
+\usepackage[defaultsans]{droidsans}
 %\usepackage[default]{comfortaa}
 %\usepackage{cmbright}
 %\usepackage[default]{raleway}
 %\usepackage{fetamont}
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
-\usepackage[thin]{roboto} 
+%\usepackage[thin]{roboto} 
 
 % set font default
 \renewcommand*\familydefault{\sfdefault} 	
@@ -93,7 +93,9 @@
 
 %customize entries left, center and right
 \lhead{}
-\chead{ \small{Lucas GRELAUD $\cdot$ Consultant and Software Engineer $\cdot$  Bremen, Germany  $\cdot$  \textcolor{sectcol}{\textbf{info@jankuester.com}}  $\cdot$ +49 176 313 877 34}}
+\chead{ \small{Lucas GRELAUD $\cdot$ Ingénieur en Sécurité des Systèmes Embarqués $\cdot$  Chatou, FRANCE 
+
+\textcolor{sectcol}{\textbf{lucas.grelaud@outlook.fr}}  $\cdot$ +33 6 33 90 50 61}}
 \rhead{}
 
 
@@ -142,10 +144,10 @@
 \usepackage{color}
 
 %accent color
-\definecolor{bgcol}{RGB}{13,92,127}
+\definecolor{bgcol}{RGB}{89,98,117}
 
 %dark background color
-\definecolor{sectcol}{RGB}{204,110,0}
+\definecolor{sectcol}{RGB}{226,84,64}
 
 %light background / accent color
 \definecolor{softcol}{RGB}{225,225,225}
@@ -223,7 +225,7 @@
 % param 1: meta section title
 %
 \newcommand{\metasection}[2]{
-	\begin{tabular*}{1\linewidth}{p{0.18\linewidth} p{0.76\linewidth}}
+	\begin{tabular*}{1\linewidth}{p{0.21\linewidth} p{0.75\linewidth}}
 		\larrow{bgcol}\normalsize{\textbf{\textcolor{sectcol}{#1}}}&#2\\
 	\end{tabular*}
 }
@@ -251,6 +253,7 @@
 	\larrow{bgcol} & #5 \\[\spread]
 \end{tabular*}
 \end{flushleft}
+
 %\textcolor{softcol}{\hrule}
 }
 
@@ -301,7 +304,7 @@
 %	TITLE HEADLINE
 %----------------------------------------------------------------------------------------
 
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.25\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Lucas}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{GRELAUD}} } }}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.25\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Lucas}}} \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{GRELAUD}} } }}
 
 %----------------------------------------------------------------------------------------
 %	HEADER IMAGE
@@ -327,10 +330,10 @@
 %----------------------------------------------------------------------------------------
 \vspace{\spread}
 
-\cvsection{Summary}\\
-I am a digital media graduate (M.Sc.) with project experience in educational research as well as in the private sector. During my studies I focused on e-assessment software and moved over to b2b software for IBM Notes Domino.
+\cvsection{À Propos}\\
+Bientôt diplômé du titre d'Ingénieur en Système Embarqué, je prépare actuellement mon mémoire de fin d'étude sur la sécurisation de l'infrastructure DevOps du groupe JCDecaux.\\
 
-Currently I develop and evaluate the next generation learning management system with Meteor based on an extensive nursing curriculum for healthcare education.  I also love fitness, martial arts, videogames, news and Sci-Fi series.\\[-2pt]
+Cette formation un peu atypique, académique en Système Embarqué et professionnel en Sécurité Informatique, me permets d'avoir une meilleure vision des problématiques liés à la sécurisation de systèmes industriel et tout particulièrement des IoT.\\[-2pt]
 \textcolor{softcol}{\hrule}
 
 \end{minipage}
@@ -342,16 +345,16 @@ Currently I develop and evaluate the next generation learning management system 
 %---------------------------------------------------------------------------------------
 %	META SECTION
 %----------------------------------------------------------------------------------------
-\metasection{Status:}{Fullstack JS Engineer, M.Sc. Digital Media, Consultant}
-\metasection{Fields:}{Project Management, Software Development, Consulting} 
+\metasection{Activité:}{Ingénieur en sécurité Informatique, JCDecaux SA, Apprenti}
+\metasection{Secteurs:}{Système Embarqué, Sécurité Informatique, Ingéniérie} 
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.485\textwidth}
 
 \vspace{5pt}
 
-\metasection{Tech:}{Meteor, Javascript, Bootstrap, Mongodb, Git, Webstorm, Sourcetree, Terminal}
-\metasection{Loves:}{Global Game Jam, Sci-Fi series, Stackoverflow, Fitness and Martial Arts}
+\metasection{Tech:}{C/C++, Python, QT5, VHDL, Burp, Wireshark, InsighVM, Suricata, Wazuh, ...}
+\metasection{Intérêts:}{IoT, HomeLab, Aérospacial amateur, engagement associatif}
 \end{minipage}
 
 
@@ -363,26 +366,36 @@ Currently I develop and evaluate the next generation learning management system 
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
 
-\cvsection{Education}
+\cvsection{Formation}
 
-\cvevent{2015 / 07}{Graduated as M.Sc. Digital Media}{University of Bremen}{Master Thesis: Semi Automated Scoring in Technology Based Assessment}{Developed and evaluated an algorithm for semi automated scoring of spreadsheet data}
+\cvevent{2018 - 2021}{Cycle Ingénieur, spécialisation Système Embarqué}
+	{ESIEA}
+	{Mémoire : <Titre mémoire>}
+	{Architecture de systèmes Embarqué et systèmes communiquant}
+Activité : Gestion logistique de l'association Air-ESIEA \& Membre de l'équipe de conception / réalisation du FabLab de l'ESIEA Paris
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2013}{Master Project - PrIMA}{University of Bremen}{Co-Invented a touch table application for medical support, co-developed software (Java) }{Formed a scrum team, mainted project dev server (Debian), surveyed target audience}
-
+\cvevent{2018}{Semestre internationnal}
+	{Université du Quebec à Chicoutimi}
+	{Modules de Développement Web Avancé, Android, Sécurité Informatique}
+	{Stage en laboratoire de recherche}
+Activité : Membre du Club de Robotique de l'UQAC
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2012 - 2015}{Master Studies Digital Media}{University of Bremen}{Inter-cultural classes in English, covering special topics in computer science and design}{Professionalized in research methods, software development and e-assessment}
+\cvevent{2016 - 2018}{DUT Informatique}
+	{IUT de Montreuil, Université Paris VIII}
+	{Architecture et Développement de logicel}
+	{Administration systèmes et réseau}
+%\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2009 - 2010}{Semester Abroad}{University of Melbourne}{Mastered six months of study and trans-cultural experience in Melbourne, Australia}{Finished machine programming, information visualization, professional essay writing}
-
-%
-\cvevent{2007 - 2012}{Bachelor Studies Digital Media}{University of Bremen}{Fundamentals in Computer Science}{Bachelor thesis focused on experimental redesign of the keyboard to support functional illiterates.}
-
+\cvevent{2013 - 2016}{Baccalauréat Technologique, STI2D option Énergie et Environnement}
+	{Lycée Léonard de Vinci, Saint-Germain-en-Laye}
+	{Électrotechnique et Automatique industrielle}
+	{Optimisation énergétique de systèmes}
 %\textcolor{softcol}{\hrule}
 
 
@@ -398,19 +411,22 @@ Currently I develop and evaluate the next generation learning management system 
 \cvsection{Experience}
 
 %
-\cvevent{2016 / 09}{Fullstack Javascript Engineer}{University of Bremen}{Invent a realtime classroom management using Meteor and React}{Design software architecture and leading development}
+\cvevent{2018 - 2021}{Ingénieur Sécurité Informatique, apprentissage}
+	{JCDecaux SA}
+	{Qualification sécurité des applications du groupe etd'équipements en vue de déploiement}
+	{PoC et/ou déploiement de solutions de sécurité (Rapid7 InsighVM, Wazuh, Swordphish, ...)}
 
 %
-\cvevent{2014 - 2016}{IT Consultant for IBM XPages and Notes Domino}{We4IT GmbH Bremen}{Realize projects in XPages and We4IT Aveedo, monitor project status, conduct reports}{Integrated Camunda BPMN engine and BPMN.IO modeler in We4IT Aveedo}
+\cvevent{2018, 3 mois}{Développeur logiciel}
+	{Laboratoire d'Intélligence Ambiante pour la Reconnaissance d'Activités}
+	{Analyse et visualisation de données}
+	{Création d'interfaces de labélisation de données pour la création de DataSets}
 
 %
-\cvevent{2012 - 2014}{Scientific Employee / Software Development}{University of Bremen}{Invented a flexible assessment framework, targeting industrial trainees}{Supervised software development lifecycle, Recruited team members}
-
-%
-\cvevent{2011 / 11}{Project Management Simulation Training}{Getoq Consulting}{Performed a two-day project simulation from management perspective}{Topics included customer contracts, change management, controlling, operational tasks}
-
-%
-\cvevent{2010 - 2011}{Student Assistant / Programmer}{otulea.uni-bremen.de}{Realized an online diagnosis platform for workforce literacy development (Flex)}{Modeled software design, implemented various prototypes, conducted usability tests}
+\cvevent{2017 - 2018}{Ambassadeyr de marque}
+	{Conrad Electronic Group}
+	{Promotion des produits de l'enseigne}
+	{Création de tutoriels et guide d'utilisation de produit / technologies vendu par Conrad}
 
 
 \end{minipage}
@@ -421,7 +437,7 @@ Currently I develop and evaluate the next generation learning management system 
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut  \textcolor{white}{www.jankuester.com} $\cdot$ \textcolor{white}{github.com/jankapunkt}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut  \textcolor{white}{www.grelaud.eu} $\cdot$ \textcolor{white}{github.com/lucasgrelaud}}}
 
 
 
